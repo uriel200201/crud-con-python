@@ -64,11 +64,17 @@
                     <td>{{contact.2}}</td>
                     <td>{{contact.3}}</td>
                     <td>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#confirmacion">
-                            Eliminar
-                        </button>
-                        <a href="/edit/{{contact.0}}" class="btn btn-outline-success">edit</a>
+                        <div class="row">
+                            <!-- Button trigger modal -->
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#confirmacion">
+                                    Eliminar
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <a href="/edit/{{contact.0}}" class="btn btn-outline-success">edit</a>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <!-- Modal -->
