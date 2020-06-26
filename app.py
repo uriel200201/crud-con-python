@@ -18,7 +18,6 @@ def index():
     cur = mysql.connection.cursor()
     cur.execute('SELECT * FROM contacts')
     data = cur.fetchall()
-    print(data)
     return render_template('index.html', contacts = data)
 
 @app.route('/add_contact', methods=['POST'])
@@ -62,4 +61,4 @@ def update_contact(id):
 
 
 if __name__ == '__main__':
-    app.run(port = 3000, debug = False)
+    app.run(port = 3000, debug = True)
